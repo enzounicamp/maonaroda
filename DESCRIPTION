@@ -1,0 +1,14 @@
+Package: maonaroda
+Title: Ferramentas Mão na Roda!
+Version: 0.0.0.9000
+Authors@R: 
+    person("Enzo", "Putton Tortelli ", , "enzoptortelli@gmail.com", role = c("aut", "cre"))
+Description: Fornece pequenas funções que o autor precisa em quase todo projeto.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: 
+    ggplot2,
+    grDevices,
+    writexl
