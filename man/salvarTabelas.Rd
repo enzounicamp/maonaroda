@@ -4,12 +4,21 @@
 \alias{salvarTabelas}
 \title{Salve as tabelas da sua lista}
 \usage{
-salvarTabelas(tabelas_list, save_path)
+salvarTabelas(
+  lista_tabelas,
+  formato = "csv",
+  path = "output/tabelas",
+  progresso = ""
+)
 }
 \arguments{
+\item{formato}{'csv' ou 'xlsx'.}
+
+\item{progresso}{Parâmetro usado pela recursão. Não deve ser utilizado}
+
 \item{tabelas_list}{Uma lista com tabelas (salva recursivo).}
 
-\item{save_path}{Pasta para salvar os gráficos.}
+\item{save_path}{Pasta para salvar as tabelas.}
 }
 \description{
 Salve as tabelas da sua lista

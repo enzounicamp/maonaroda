@@ -2,15 +2,17 @@
 % Please edit documentation in R/salvarGraficos.R
 \name{salvarGraficos}
 \alias{salvarGraficos}
-\title{Salve os gráficos da sua lista}
+\title{Salve os gráficos da sua lista (recursivamente!)}
 \usage{
-salvarGraficos(lista_graficos, save_path)
+salvarGraficos(lista_graficos, path = "output/graficos", progresso = "")
 }
 \arguments{
 \item{lista_graficos}{Uma lista com gráficos (salva recursivo).}
 
-\item{save_path}{Pasta para salvar os gráficos.}
+\item{path}{Pasta para salvar os gráficos.}
+
+\item{progresso}{Parâmetro usado pela recursão. Não deve ser utilizado}
 }
 \description{
-Salve os gráficos da sua lista
+Salve os gráficos da sua lista (recursivamente!)
 }
