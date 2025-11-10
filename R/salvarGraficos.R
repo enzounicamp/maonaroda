@@ -23,7 +23,7 @@ salvarGraficos <- function(lista_graficos, path = 'output/graficos', progresso =
         )
     }
 
-  } else if(is_ggplot(lista_graficos) | 'recordedplot' %in% class(lista_graficos)) {
+  } else if(ggplot2::is_ggplot(lista_graficos) | 'recordedplot' %in% class(lista_graficos)) {
     save_settings <- lista_graficos[['save_settings']]
 
     device <- save_settings[['device']]
@@ -40,7 +40,7 @@ salvarGraficos <- function(lista_graficos, path = 'output/graficos', progresso =
         path =
           stringr::str_split_1(path, '/') %>%
           .[-length(.)] %>%
-          str_flatten(collapse = '/'),
+          stringr::str_flatten(collapse = '/'),
         plot = lista_graficos,
         device = device,
         width = if(is.null(width)) NA else width,
