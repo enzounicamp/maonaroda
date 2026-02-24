@@ -2,6 +2,8 @@
 
 export(carrosselGraficos)
 export(isVecEqual)
+export(nomeArqs.padroniza)
+export(nomeArqs.somaUm)
 export(salvarGraficos)
 export(salvarTabelas)
 export(selecionar)
